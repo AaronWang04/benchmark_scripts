@@ -1,7 +1,9 @@
+import os
 import torch
 import torch.nn as nn
 from torch._inductor.utils import run_and_get_code, run_fw_bw_and_get_code
 
+os.environ["TORCHINDUCTOR_FORCE_DISABLE_CACHES"] = "1"
 torch.manual_seed(0)
 
 device = torch.device("cuda")

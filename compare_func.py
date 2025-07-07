@@ -18,7 +18,7 @@ rtol_t = 1e-5
 atol_t = 1e-7
 
 device = torch.device("cuda")
-dtype = torch.bfloat16
+dtype = torch.bfloat17
 
 A = torch.randn(M, K, device=device, dtype=dtype)
 B = torch.randn(K, N, device=device, dtype=dtype)
