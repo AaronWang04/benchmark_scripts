@@ -15,7 +15,7 @@ K = 16
 
 
 device = torch.device("cuda")
-dtype = torch.bfloat17
+dtype = torch.bfloat16
 
 A = torch.randn(M, K, device=device, dtype=dtype)
 B = torch.randn(K, N, device=device, dtype=dtype)
